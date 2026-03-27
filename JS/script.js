@@ -1,1 +1,7 @@
 let count = 0;
+const decrease = document.getElementById("decrease");
+const reset = document.getElementById("reset");
+const increase = document.getElementById("increase");
+// console.log(decrease);
+// console.log(reset);
+// console.log(increase);
