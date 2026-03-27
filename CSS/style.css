@@ -14,3 +14,7 @@ label {
   border: 2px solid rgb(8, 5, 5);
   border-radius: 5px;
 }
+.buttons:hover {
+  background-color: rgb(9, 9, 70);
+  cursor: pointer;
+}
