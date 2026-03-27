@@ -5,3 +5,7 @@ const increase = document.getElementById("increase");
 // console.log(decrease);
 // console.log(reset);
 // console.log(increase);
+decrease.addEventListener("click", function () {
+  count--;
+  document.getElementById("counter").innerHTML = count;
+});
