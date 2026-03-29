@@ -9,6 +9,10 @@ let guess;
 let running = true;
 while (running) {
   guess = window.prompt(`inter a number ${minNumber}-${maxNumber}`);
+  guess = Number(guess);
+  console.log(typeof guess);
   if (isNaN(guess)) {
+    window.prompt(`please inter the valid number`);
   }
+  running = false;
 }
