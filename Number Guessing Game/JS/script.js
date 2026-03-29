@@ -7,3 +7,8 @@ const answer = Math.floor(
 let attempt = 0;
 let guess;
 let running = true;
+while (running) {
+  guess = window.prompt(`inter a number ${minNumber}-${maxNumber}`);
+  if (isNaN(guess)) {
+  }
+}
