@@ -12,7 +12,20 @@ while (running) {
   guess = Number(guess);
   console.log(typeof guess);
   if (isNaN(guess)) {
-    window.prompt(`please inter the valid number`);
+    window.alert(`please inter the valid number`);
+  } else if (guess < minNumber || guess > maxNumber) {
+    window.alert(`please inter valid number `);
+  } else {
+    attempt++;
+    if (guess < answer) {
+      window.alert(`Too low! try again`);
+    } else if (guess > answer) {
+      window.alert(`Too high! try again`);
+    } else if (guess == answer) {
+      window.alert(
+        `Correct! the answer was ${answer} it tooks you ${attempt} to get`,
+      );
+      running = false;
+    }
   }
-  running = false;
 }
