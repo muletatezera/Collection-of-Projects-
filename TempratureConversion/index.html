@@ -4,8 +4,31 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Temprature conversion</title>
+    <link rel="stylesheet" href="./CSS/style.css" />
   </head>
   <body>
     <h1>Temprature Conversion</h1>
+    <form action="" id="form-container">
+      <label for="numbers">input number:</label>
+      <input
+        type="number"
+        name="numbers"
+        id="interedNumber"
+        value="0"
+        min="1"
+      />
+      <br />
+      <input type="radio" name="radiobox" id="myFahrenite" />
+      <label for="radiobox">To fahrenite</label>
+      <br />
+      <input type="radio" name="radiobox" id="myCelciues" />
+      <label for="radiobox">To celciues</label>
+      <br />
+      <input type="button" value="submit" id="submit-btn" />
+      <div id="result"></div>
+    </form>
+
+    <!-- <div id="celciuesResult"></div> -->
+    <script src="./JS/script.js"></script>
   </body>
 </html>

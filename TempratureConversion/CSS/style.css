@@ -1,0 +1,30 @@
+body {
+  background-color: antiquewhite;
+  text-transform: capitalize;
+}
+h1 {
+  text-align: center;
+}
+#form-container {
+  width: 30vw;
+  margin: auto;
+  border: 5px solid rgb(109, 59, 59);
+  border-radius: 5px;
+  padding: 10px;
+  /* text-align: center; */
+}
+#submit-btn {
+  margin: 8px;
+  background-color: brown;
+  color: white;
+  border-radius: 5px;
+}
+#submit-btn:hover {
+  cursor: pointer;
+  background-color: rgb(240, 60, 60);
+}
+#interedNumber {
+  border-radius: 5px;
+  border: none;
+  width: 60px;
+}
