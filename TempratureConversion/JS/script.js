@@ -1,4 +1,3 @@
-const inputNumber = document.getElementById("interedNumber").value;
 const myfahrenite = document.getElementById("myFahrenite");
 const mycelciues = document.getElementById("myCelciues");
 const submitButton = document.getElementById("submit-btn");
@@ -7,6 +6,7 @@ const result = document.getElementById("result");
 let calculate;
 
 submitButton.onclick = function () {
+  const inputNumber = document.getElementById("interedNumber").value;
   if (myfahrenite.checked) {
     calculate = Math.floor((9 / 5) * inputNumber + 32) + "℉";
     result.innerHTML = calculate;
