@@ -1,0 +1,25 @@
+#diceContainer {
+  background-color: antiquewhite;
+  width: 60vw;
+  margin: 0 auto;
+  text-transform: capitalize;
+  text-align: center;
+  border: 4px solid rgb(109, 172, 172);
+  border-radius: 10px;
+  padding: 10px;
+}
+#numberOfDice {
+  border-radius: 10px;
+  border: none;
+}
+#roll-btn {
+  background-color: blue;
+  color: white;
+  font-weight: bold;
+  border-radius: 8px;
+  border: none;
+}
+#roll-btn:hover {
+  background-color: rgb(95, 95, 236);
+  cursor: pointer;
+}
