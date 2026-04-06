@@ -29,3 +29,17 @@
 // Resolves: #402
 
 // Would you like to know how to set up a git hook to automatically check if your messages follow this format?
+const numberOfDice = document.getElementById("numberOfDice");
+const rollButton = document.getElementById("roll-btn");
+const diceNumber = document.getElementById("diceNumber");
+const diceImage = document.getElementById("diceImage");
+rollButton.onclick = function () {
+  let Dice = [];
+  const DiceImage = [];
+  for (i = 0; i < numberOfDice.value; i++) {
+    Dice = Math.floor(Math.random() * 6) + 1;
+    console.log(Dice);
+
+    diceNumber.innerText = Dice;
+  }
+};
