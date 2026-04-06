@@ -41,5 +41,9 @@ rollButton.onclick = function () {
     console.log(Dice);
 
     diceNumber.innerText = Dice;
+    if (Dice == 1) {
+      diceImage = createElement("image");
+      // diceImage.innerHTML = img;
+    }
   }
 };
