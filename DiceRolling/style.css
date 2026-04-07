@@ -23,3 +23,11 @@
   background-color: rgb(95, 95, 236);
   cursor: pointer;
 }
+#diceImage {
+  padding: 10px;
+  margin: 0 auto;
+}
+#diceImage img {
+  max-width: 100px;
+  padding: 5px;
+}

@@ -34,16 +34,14 @@ const rollButton = document.getElementById("roll-btn");
 const diceNumber = document.getElementById("diceNumber");
 const diceImage = document.getElementById("diceImage");
 rollButton.onclick = function () {
-  let Dice = [];
+  let numberDice = [];
   const DiceImage = [];
   for (i = 0; i < numberOfDice.value; i++) {
-    Dice = Math.floor(Math.random() * 6) + 1;
-    console.log(Dice);
-
-    diceNumber.innerText = Dice;
-    if (Dice == 1) {
-      diceImage = createElement("image");
-      // diceImage.innerHTML = img;
-    }
+    const dice = Math.floor(Math.random() * 6) + 1;
+    numberDice.push(dice);
+    DiceImage.push(`<img src="resource/image/diceface${dice}.png" >`);
+    console.log(DiceImage);
   }
+  diceNumber.textContent = `Dice: ${numberDice.join(`,`)}`;
+  diceImage.innerHTML = DiceImage.join(" ");
 };
